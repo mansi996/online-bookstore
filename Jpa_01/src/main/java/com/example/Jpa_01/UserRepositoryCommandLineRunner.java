@@ -1,7 +1,7 @@
 package com.example.Jpa_01;
 
-import org.slf4j.Logger;
 
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -25,6 +25,7 @@ public class UserRepositoryCommandLineRunner implements CommandLineRunner {
 		User user=new User("hello","Admin");
 		User user1=new User("welcome","mad World");
 		userRepository.save(user);
+		
 		userRepository.save(user1);
 		log.info("USER IS CREATED SUCCESSFULY"+user);
 		log.info("USER IS CREATED SUCCESSFULY"+user1);
